@@ -1,0 +1,5 @@
+.container {
+    max-width: 60rem;  //it would otherwise stretch across the screen and there wouldn't be any margins
+    margin: 0 auto;
+    padding: 0 $m-size;
+}

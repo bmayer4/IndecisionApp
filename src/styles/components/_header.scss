@@ -1,0 +1,26 @@
+.header {
+    background: $off-black;
+    color: white;
+    margin-bottom: $m-size;
+    padding: $m-size 0;  //1.6 top and bottom, 0 left and right
+}
+
+//BEM block element modifier naming convention
+//__ for element inside
+.header__title {
+    font-size: $l-size;
+    margin: 0;   //from so: h1 elements have a default margin. Adding margin: 0; to your h1 properties should clear up your margin issue
+}
+
+.header__subtitle {
+    color: $off-white;
+    font-size: $m-size;
+    font-weight: 200;
+    margin: 0
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .header {
+        margin-bottom: $xl-size;
+    }
+}
